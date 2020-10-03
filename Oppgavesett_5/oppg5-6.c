@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define SIZE 21
+
+int main()
+{
+    int i,j;
+    float teller=0.0;
+
+    float c[SIZE];
+    float f[SIZE];
+
+    printf("%10s%15s\n","Celsius","Fahrenheit");
+    printf("-------------------------\n");
+
+    //Løkken kjøres SIZE antall ganger.
+    for (i=0;i<SIZE;i++)
+    {
+        c[i] = -100.0+teller;
+        f[i] = (1.8*c[i])+32;
+        teller+=10.0; //Øker celsius med 10 for hver gang løkken kjøres
+        printf("%10.1f%15.1f\n",c[i],f[i]);
+
+    }
+    return 0;
+}
+
+
+
+

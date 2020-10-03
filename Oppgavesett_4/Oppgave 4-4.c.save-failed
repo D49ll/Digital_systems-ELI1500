@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define SIZE 10
+
+
+int main()
+{
+    srand(time(NULL));
+    double x[SIZE];
+    double sum=0.0;
+    double gjennomsnitt=0.0;
+    double kontroll_1=0.0,kontroll_2;
+
+    int i=0,j=0;
+
+    for (i=0;i<SIZE;i++)
+    {
+        x[i] = (rand()%10001)/100.0;
+        printf("%.2f\t",x[i]);
+        sum = sum + x[i];
+
+    }
+    gjennomsnitt = sum/(double)i;
+    printf("\n%.2f",gjennomsnitt);
+
+    //Regner +-10% av gjennomsnittet
+    kontroll_1 = gjennomsnitt*(0.90);
+    kontroll_2 = gjennomsnitt*(-0.90);
+
+    printf("%.2f og %.2f",kontroll_1,kontroll_2);
+
+
+    /*for (i=0;i<SIZE;i++)
+    {
+
+    }
+    */
+
+    return 0;
+}

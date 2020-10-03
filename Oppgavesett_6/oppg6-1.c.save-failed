@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int x=2,y=5,*z,*w;
+
+
+    *z=x;
+    *w=y;
+
+    printf("Adresse til variablene:\nx=%d og y=%d.\n\nVerdien av pekere:\nx=%d og y=%d\n",&x,&y,*z,*w);
+    printf("\nAdresse til pekere: *x=%d og *y=%d",z,w);
+
+    return 0;
+}

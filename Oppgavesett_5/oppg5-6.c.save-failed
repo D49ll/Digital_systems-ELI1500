@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <time.h>
+#define SIZE 21
+
+
+
+
+int main()
+{
+
+    int i,j;
+    float teller=0.0;
+
+    float c[SIZE];
+    float f[SIZE];
+
+
+    printf("%10s %15s\n","Celsius","Fahrenheit");
+    for (i=0;i<SIZE;i++)
+    {
+        c[i] = -100.0+teller;
+        f[i] = (1.8*c[i])+32;
+        teller+=10.0;
+        printf("c = %10.1f   f = %15.1f\n",c[i],f[i]);
+    }
+    for (i=0;i<SIZE;i++)
+    {
+
+
+    }
+
+    return 0;
+}
+
+
+
+

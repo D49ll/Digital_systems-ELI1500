@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,i, antall, faktor, sum=0;
+
+    scanf("%d",&x);
+
+    for (i=0;i<x;i++)
+
+{
+    /*if (x<6)
+        {
+            printf("Ingen perfekte tall");
+            //return 0;
+        }
+*/
+    for (antall=2;antall<=x/2;antall++)
+    {
+            if ( x%antall== 0)
+            {
+                faktor = x/antall;
+                sum = sum + faktor;
+                printf("faktor=%d",faktor);
+                //printf("faktor = %d\n",faktor);
+            }
+    }
+    sum++;
+
+
+    if (sum == x)
+        {
+            printf("sum = %d",x);
+            //return 1;
+        }
+
+}
+}
